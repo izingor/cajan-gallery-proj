@@ -8,8 +8,7 @@ const gProjs = [{
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://izingor.github.io/CaJan-Pacman/',
         publishedAt: 'Jan 30, 2022',
-        labels: ['Matrixes', 'keyboard events'],
-        image: '../img/pacman.png'
+        image: '/img/pacman.png'
     },
     {
         id: '2',
@@ -18,8 +17,7 @@ const gProjs = [{
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://izingor.github.io/CaJan-Number-Picker/',
         publishedAt: 'Jan 29, 2022',
-        labels: ['Matrixes', 'keyboard events'],
-        image: '../img/number-picker.png'
+        image: '/img/number-picker.png'
     },
     {
         id: '3',
@@ -28,8 +26,7 @@ const gProjs = [{
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://izingor.github.io/CaJan-Minesweeper/',
         publishedAt: 'Jan 29, 2022',
-        labels: ['Matrixes', 'keyboard events'],
-        image: '../img/minesweeper.png'
+        image: '/img/minesweeper.png'
 
     },
     {
@@ -39,8 +36,7 @@ const gProjs = [{
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://izingor.github.io/book-store/',
         publishedAt: 'Jan 29, 2022',
-        labels: ['Matrixes', 'keyboard events'],
-        image: '../img/book-store.png'
+        image: '/img/book-store.png'
 
     }
 

@@ -7,8 +7,6 @@ console.log('Starting up');
 $('.page-top').html(onInit());
 
 function onInit() {
-    // $('.submit-btn').click(onSubmit);
-
     renderProjs();
 }
 
