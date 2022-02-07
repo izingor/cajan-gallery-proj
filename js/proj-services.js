@@ -31,6 +31,17 @@ const gProjs = [{
         labels: ['Matrixes', 'keyboard events'],
         image: '../img/minesweeper.png'
 
+    },
+    {
+        id: '4',
+        name: 'Book Store ',
+        title: 'Stoke Manager',
+        desc: 'lorem ipsum lorem ipsum lorem ipsum',
+        url: 'https://izingor.github.io/book-store/',
+        publishedAt: 'Jan 29, 2022',
+        labels: ['Matrixes', 'keyboard events'],
+        image: '../img/book-store.png'
+
     }
 
 ]
