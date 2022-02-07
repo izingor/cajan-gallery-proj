@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 
 console.log('Starting up');
@@ -6,8 +6,8 @@ console.log('Starting up');
 
 $('.page-top').html(onInit());
 
-
 function onInit() {
+    // $('.submit-btn').click(onSubmit);
 
     renderProjs();
 }
@@ -17,24 +17,26 @@ function renderProjs() {
 
     var strHTML = '';
     gProjs.forEach(proj => {
-        strHTML += `<div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" onclick = "onOpenModal('${proj.id}')" data-toggle="modal" href="#portfolioModal${proj.id}">
-        <div class="portfolio-hover">
-        <div class="portfolio-hover-content">
-        <i class="fa fa-plus fa-3x"></i>
-        </div>
-        </div>
-        <img class="img-fluid" src="${proj.image}" alt="">
-        </a>
-        <div class="portfolio-caption">
-        <h4>${proj.name}</h4>
-        <p class="text-muted">${proj.title}</p>
-        <a href = "${proj.url}"> Play here</a>
-        </div>
-        </div>`
+        strHTML += `
+ <div class="col-md-4 col-sm-6 portfolio-item">
+               <a class="portfolio-link" onclick = "onOpenModal('${proj.id}')"
+                data-toggle="modal" href="#portfolioModal${proj.id}">
+               <div class="portfolio-hover">
+               <div class="portfolio-hover-content">
+               <i class="fa fa-plus fa-3x"></i>
+               </div>
+               </div>
+               <img class="img-fluid proj-images" src="${proj.image}" alt="">
+               </a>
+               <div class="portfolio-caption">
+               <h4>${proj.name}</h4>
+               <p class="text-muted">${proj.title}</p>
+               </div>
+               </div>
+               `;
 
-        // $(`.proj${proj.id}`).click(onOpenModal(proj.id))
-    })
+
+    });
 
     $('.projs-gallery').html(strHTML);
 }
@@ -57,14 +59,13 @@ function onOpenModal(id) {
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <h2>${proj.title}</h2>
+                            <h2>${proj.name}</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-fluid d-block mx-auto" src="${proj.image}" alt="">
+                            <img class="img-fluid d-block mx-auto modal-images" src="${proj.image}" alt="">
                             <p>${proj.desc}</p>
                             <ul class="list-inline">
                                 <li>Date: ${proj.publishedAt}</li>
-                                <li>Client: ${proj.labels}</li>
-                                <li>Category: Illustration</li>
+                                <li><a href = "${proj.url}">Visit</a></li>
                             </ul>
                             <button class="btn btn-primary" data-dismiss="modal" type="button">
                                 <i class="fa fa-times"></i>
@@ -76,6 +77,21 @@ function onOpenModal(id) {
         </div>
     </div>
 </div>`;
-    $('.modals-cointainer').html(strHTML)
+    $('.modals-cointainer').html(strHTML);
 
+}
+
+function onSubmit(ev) {
+    // ev.preventDefault();
+    const mailAdress = ev[0].value;
+    const subject = ev[1].value;
+    const txt = ev[2].value;
+
+
+    console.dir(ev);
+    console.log(mailAdress);
+    console.log(subject);
+    console.log(txt);
+    window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${mailAdress}&su=${subject}&body=${txt}&bcc=someone.else@example.com&tf=cm`);
+    // window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${mailAdress}&su=${subject}&body=${txt}`)
 }
