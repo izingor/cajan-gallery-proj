@@ -218,7 +218,7 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/image-background-1.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -667,6 +667,7 @@ header.masthead .intro-text .intro-heading {
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: #EEEEEE;
 }
 
 footer span.copyright {
@@ -799,6 +800,7 @@ fieldset[disabled] .btn-primary:hover {
     background-color: #da1212;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    transition: 1.2s;
 }
 
 .btn-xl.focus,
@@ -810,8 +812,8 @@ fieldset[disabled] .btn-primary:hover {
 
 .btn-xl:hover {
     color: white;
-    border-color: #da1212;
-    background-color: #da1212;
+    border-color: #da12126c;
+    background-color: #da121263;
 }
 
 .btn-xl.active,
@@ -892,6 +894,11 @@ textarea {
 
 .modal-images {
     object-fit: contain;
-    width: 80%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
 }
+
+
+/* .fa {
+    color: #da1212;
+} */
