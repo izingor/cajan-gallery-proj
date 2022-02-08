@@ -17,7 +17,7 @@ const gProjs = [{
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://izingor.github.io/CaJan-Number-Picker/',
         publishedAt: 'Jan 29, 2022',
-        image: 'img/number-picker.png'
+        image: 'img/number-picker.PNG'
     },
     {
         id: '3',
@@ -26,7 +26,7 @@ const gProjs = [{
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://izingor.github.io/CaJan-Minesweeper/',
         publishedAt: 'Jan 29, 2022',
-        image: 'img/minesweeper.png'
+        image: 'img/minesweeper.PNG'
 
     },
     {
@@ -36,7 +36,7 @@ const gProjs = [{
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://izingor.github.io/book-store/',
         publishedAt: 'Jan 29, 2022',
-        image: 'img/book-store.png'
+        image: 'img/book-store.PNG'
 
     }
 
