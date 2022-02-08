@@ -1,7 +1,6 @@
 'use strict';
 
 
-console.log('Starting up');
 
 
 $('.page-top').html(onInit());
@@ -12,7 +11,6 @@ function onInit() {
 
 
 function renderProjs() {
-
     var strHTML = '';
     gProjs.forEach(proj => {
         strHTML += `
@@ -32,17 +30,13 @@ function renderProjs() {
                </div>
                </div>
                `;
-
-
     });
-
     $('.projs-gallery').html(strHTML);
 }
 
 
 
 function onOpenModal(id) {
-
     var proj = gProjs.find(proj => proj.id === id);
     console.log(proj);
     var strHTML = `<div class="portfolio-modal modal fade" id="portfolioModal${proj.id}" tabindex="-1" role="dialog" aria-hidden="true">
@@ -67,29 +61,15 @@ function onOpenModal(id) {
                             </ul>
                             <button class="btn btn-primary" data-dismiss="modal" type="button">
                                 <i class="fa fa-times"></i>
-                                Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>`;
+                                Close Project</button></div></div></div></div></div></div></div>`;
     $('.modals-cointainer').html(strHTML);
 
 }
 
 function onSubmit(ev) {
-    // ev.preventDefault();
     const mailAdress = ev[0].value;
     const subject = ev[1].value;
     const txt = ev[2].value;
 
-
-    console.dir(ev);
-    console.log(mailAdress);
-    console.log(subject);
-    console.log(txt);
     window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${mailAdress}&su=${subject}&body=${txt}&bcc=someone.else@example.com&tf=cm`);
-    // window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${mailAdress}&su=${subject}&body=${txt}`)
 }
